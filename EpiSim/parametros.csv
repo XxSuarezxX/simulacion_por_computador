@@ -1,0 +1,10 @@
+parametro,valor_min,valor_max,tipo
+poblacion,10000,10000,fijo
+infectados_iniciales,10,10,fijo
+dias_simulacion,365,365,fijo
+beta,3,5,uniforme
+periodo_incubacion,2,5,uniforme
+periodo_infeccioso,7,14,uniforme
+probabilidad_transmision,0.4,0.6,uniforme
+tasa_vacunacion,0.3,0.7,uniforme
+efectividad_vacuna,0.80,0.95,uniforme
