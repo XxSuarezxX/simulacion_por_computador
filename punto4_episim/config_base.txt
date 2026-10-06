@@ -1,0 +1,31 @@
+# EpiSim - configuración base (formato: clave = valor  |  clave = U(min, max))
+# Los seis parámetros con U(a,b) se muestrean UNA vez por simulación (método 3.5 del Punto 3).
+
+# --- Población y horizonte ---
+N = 10000
+infectados_iniciales = 10
+dias = 365
+n_simulaciones = 1000
+n_sim_sensibilidad = 100
+semilla_base = 1597
+
+# --- Parámetros estocásticos del enunciado ---
+beta = U(3, 5)                    # tope de contactos por infectado y día (indicación del docente: 3 a 5)
+incubacion = U(2, 5)              # días en E (se redondea al día entero)
+periodo_infeccioso = U(7, 14)     # días en I (se redondea al día entero)
+p_transmision = U(0.4, 0.6)       # prob. de contagio por contacto
+tasa_vacunacion = U(0.3, 0.7)     # proporción de población vacunada
+efectividad_vacuna = U(0.80, 0.95)  # reducción de susceptibilidad
+
+# --- Supuestos del modelador (no vienen en el enunciado) ---
+letalidad = 0.01                  # prob. de fallecer al salir de I (para contar muertes)
+umbral_brote = 0.05               # brote mayor: infecta >= 5% de N
+
+# --- Interpretación del Paso 1 y 2 ---
+# modo_contactos: piso_beta   -> floor(r * beta), beta muestreado por réplica (con beta = U(3,5))
+#                 literal     -> floor(r * beta_max), beta_max = límite superior del rango
+#                 estocastico -> floor(beta + r) (media beta; para el rango original U(0.3,0.5))
+modo_contactos = piso_beta
+# seleccion_contacto: poblacion     -> se elige a cualquiera de los N (contactos con no-S se pierden)
+#                     susceptibles  -> se elige solo entre susceptibles (lectura literal del enunciado)
+seleccion_contacto = poblacion

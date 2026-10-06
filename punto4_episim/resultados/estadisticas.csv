@@ -1,0 +1,17 @@
+escenario,metrica,n,media,desv_est,mediana,min,max,ic95_inf,ic95_sup
+sin_vacunacion,Proporción de brotes mayores,1000,1.0,0.0,1.0,1.0,1.0,1.0,1.0
+sin_vacunacion,Total infectados (todas),1000,9976.376,49.8342,9995.0,9435.0,10000.0,9973.2872,9979.4648
+sin_vacunacion,Total infectados (brotes mayores),1000,9976.376,49.8342,9995.0,9435.0,10000.0,9973.2872,9979.4648
+sin_vacunacion,Muertes (todas),1000,99.875,10.3271,100.0,67.0,138.0,99.2349,100.5151
+sin_vacunacion,Muertes (brotes mayores),1000,99.875,10.3271,100.0,67.0,138.0,99.2349,100.5151
+sin_vacunacion,Magnitud del pico de I (brotes mayores),1000,7376.661,1282.5154,7593.0,3122.0,9855.0,7297.1699,7456.1521
+sin_vacunacion,Día del pico de I (brotes mayores),1000,30.954,5.663,31.0,18.0,49.0,30.603,31.305
+sin_vacunacion,Días hasta control E+I=0 (controladas),1000,56.276,10.32,55.0,35.0,94.0,55.6364,56.9156
+con_vacunacion,Proporción de brotes mayores,1000,1.0,0.0,1.0,1.0,1.0,1.0,1.0
+con_vacunacion,Total infectados (todas),1000,7321.362,1364.5048,7501.0,2231.0,9826.0,7236.7891,7405.9349
+con_vacunacion,Total infectados (brotes mayores),1000,7321.362,1364.5048,7501.0,2231.0,9826.0,7236.7891,7405.9349
+con_vacunacion,Muertes (todas),1000,72.984,15.9728,74.0,16.0,118.0,71.994,73.974
+con_vacunacion,Muertes (brotes mayores),1000,72.984,15.9728,74.0,16.0,118.0,71.994,73.974
+con_vacunacion,Magnitud del pico de I (brotes mayores),1000,3567.602,1470.584,3487.0,195.0,7667.0,3476.4543,3658.7497
+con_vacunacion,Día del pico de I (brotes mayores),1000,41.897,10.1211,40.0,21.0,112.0,41.2697,42.5243
+con_vacunacion,Días hasta control E+I=0 (controladas),1000,104.793,25.0148,102.0,51.0,272.0,103.2426,106.3434
